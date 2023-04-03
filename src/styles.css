@@ -1,0 +1,96 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+}
+
+.App {
+  margin-top: 25vh;
+  width: 600px;
+  height: 300px;
+  background-color: rgb(68,139,182);
+  margin-left: 30%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+}
+
+.head-title{
+   font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0px;
+  
+}
+
+.dropdown {
+  width: 300px;
+  user-select: none;
+  margin: 10px auto;
+  position: relative;
+  background-color:rgba(28, 199, 230, 0.5);
+  border-radius: 8px;
+  box-sizing: border-box;
+  
+  
+  
+  
+}
+
+
+
+.dropdown .dropdown-btn {
+ padding: 10px;
+ text-align:center;
+ border: 2px solid transparent ;
+ /* background:white ; */
+ box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+ font-weight: bold;
+ color: #333;
+ display: flex;
+ align-items:center;
+ cursor: pointer;
+ justify-content: space-between;
+ border-radius: 8px;
+ 
+}
+
+.dropdown .dropdown-content {
+  position: absolute;
+  top: 110%;
+  padding: 15px;
+  /* background: #fff;  */
+  box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
+ font-weight: 500;
+ color: #333;
+
+}
+.dropdown .dropdown-content .dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.dropdown .dropdown-content .dropdown-item:hover{
+  background: black;
+}
+.dropdata{
+  background-color: white;
+  border:2px solid white; 
+  padding: 10px;
+  
+  
+}
+
+.slidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+
+

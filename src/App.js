@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "../src/styles.css"
+import Dropdown from "./Dropdown";
+import { useState } from "react";
 
-function App() {
+
+
+export default function App() {
+  const [selected,setSelected]= useState("select");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+      {/*  custom dropdown menu */}
 
-export default App;
+      <div className="slidebar" >
+      <div className="head-title">Should you use a dropdown?</div>
+      <Dropdown selected={selected}  setSelected={setSelected}/>
+      </div>
+    </div>
+  )
+}
